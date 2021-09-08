@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=divice-width, initial-scale=1.0f">
+	<title></title>
+	<style type="text/css">
+		  
+		  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+	
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		body  {
+              font-family: "Lato",sans-serif;
+			
+		}
+		body{
+			margin: 0px;
+			padding:0px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.header{
+			width: 100%;
+			height: 99px;
+			
+		}
+		.header-main{
+			width: 30%;
+			height: 100px;
+		}
+		.h-btn{
+			width: 68%;
+			height: 100px;
+			border-width: 0px;
+			background-color: white;
+		}
+		.h-btn img{
+            width: 67.4%;
+            height: 73.4%;
+            position: relative;
+            
+            bottom: 1.2px;
+		}
+		.main{
+			width: 100%;
+			height: 900px;
+			    background-image: url(https://recipefund.com/loginbg.webp);
+			    background-position: center;
+			    background-size: cover;
+			    
+		}
+		.main .welcome{
+			width: 91.2%;
+			height: 670px;
+			background-color: white;
+			
+		}
+		.wm{
+			width: 50%;
+			height: 100%;
+			
+		}
+		.w-img{
+			width: 50%;
+			height: 100%;
+			    background-image: url(https://recipefund.com/loginside.webp);
+			    background-position: center;
+
+			
+		}
+		.w-img button{
+			width: 300px;
+			height: 300px;
+			    border: 0px;
+			cursor: pointer;
+			background-color: transparent;
+            background-image: none;
+            position: relative;
+            bottom: 3px;
+
+            
+		}
+        .w-img img{
+        	width: 233px;
+        	height: 260px;
+        	
+        	
+    
+        }
+
+		.w-btn{
+			width: 100%;
+			height: 44px;
+		}
+		.w-btn button{
+              width: 94px;
+              height: 36px;
+              font-size: 18.4px!important;
+    line-height: 25px!important;
+    font-family: Lato,sans-serif!important;
+    color: rgba(136,176,75,1);
+    border-color: rgba(136,176,75,1);
+        cursor: pointer;
+        border-width: 1px;
+        border-radius: 5px;
+        position: relative;
+    left: 14px;
+    background-color: white;
+    padding-left: 14px;
+    padding-bottom: 2px;
+		}
+		.w-btn button span{
+			position: relative;
+			right: 6.5px;
+			bottom: 1px;
+		}
+		.w-h{
+			width: 100%;
+			height: 135px;
+			
+		}
+		.w-h h1{
+             margin: 0px;
+             padding: 0px;
+             font-family: Playfair Display,serif!important;
+             font-weight: 600 !important;
+                 font-size: 35.4px!important;
+    line-height: 42px!important;
+        width: 58.333333%;
+            color: rgba(0,0,0,1); text-align: center;
+		}
+		.w-h p{
+              margin: 0px;
+             padding: 0px;
+                 font-size: 18px!important;
+    line-height: 22px!important;
+    font-family: Playfair Display,serif!important;
+    color: rgba(0,0,0,1);
+
+		}
+
+
+		.social {
+			width: 12.4rem;
+			height: 57px;
+		}
+		.social button{
+			border:0px;
+			    width: 2.5rem;
+			    height: 2.5rem;
+			    border: 1px solid;
+			        border-radius: 9999px;
+			            cursor: pointer;
+			            background-color: transparent;
+			            border-color: antiquewhite;
+
+		}
+		.w-full{
+			    width: 83.5%;
+			    height: 34px;
+
+		}
+		.w-full span{
+			    color: rgba(130,130,130,1);
+			        line-height: 1.75rem;
+			        font-size: 1rem;
+			        padding-top: 18px;
+			        background-color: rgba(255,255,255,1);
+			           
+		}
+		.w-full .d1{
+			width: 44%;
+			border-bottom: 1px solid #e5e7eb;
+		}
+		.input{
+			width: 83.3%;
+			height: 113px;
+			border-width: 1px;
+			
+		}
+		.input label{
+			width: 100%;
+			height: 27px;
+			font-family: Lato,sans-serif!important;
+			    font-size: 16.1px!important;
+    line-height: 23.2px!important;
+		}
+		.input span{
+			position: relative;
+			bottom: 1px;
+		}
+		.input-1{
+			border-style: groove;
+			border: 0.5px solid;
+			    border-color: rgba(130,130,130,1);
+			width: 99.7%;
+			height: 42px;
+			border-radius: 6px;
+		}
+		.input-1 input{
+			border-width: 0px;
+			width: 88.5%;
+			font-size: 12.5px;
+			letter-spacing: 0.55px;
+			padding-top: 4px;
+		}
+		 input::placeholder{
+			color:#9ca3af;
+            opacity: 1;
+
+		}
+		.input-1 img{
+           position: relative;
+           top: 12px;
+           right: 3px;
+		}
+
+
+
+		.input-2{
+			width: 83.3%;
+			height: 87px;
+			border-width: 1px;
+			
+		}
+		.input-2 label{
+			width: 100%;
+			height: 26px;
+			letter-spacing: 0.09px;
+			font-family: Lato,sans-serif!important;
+			    font-size: 16.1px!important;
+    line-height: 23.2px!important;
+		}
+		.input-2 span{
+			position: relative;
+			bottom: 1px;
+		}
+		.input-3{
+			border-style: groove;
+			border: 0.5px solid;
+			    border-color: rgba(130,130,130,1);
+			width: 99.7%;
+			height: 45px;
+			border-radius: 6px;
+		}
+		.input-3 input{
+
+            padding-top: 4px;
+			border-width: 0px;
+			width: 88.4%;
+			font-size: 12.5px;
+			letter-spacing: 0.9px;
+			
+		}
+		 input::placeholder{
+			color:#9ca3af;
+            opacity: 1;
+
+		}
+		.input-3 img{
+           position: relative;
+           top: 11px;
+           
+		}
+
+
+
+		.fp{
+			width: 85.4%;
+			height: 46px;
+			
+		}
+		.fp-l{
+			width: 31.7%;
+			height: 38px;
+			
+		}
+		.fp-r{
+			width: 30%;
+			height: 38px;
+			
+		}
+		.fp-l p{
+			font-size: 14.35px!important;
+            line-height: 20.4px!important;
+            font-family: Lato,sans-serif!important;
+		}
+		.fp-l input{
+			width: 18px;
+			height:18px;
+			border-radius: 5px;
+		}
+		.fp-l label{
+			width: 27px;
+			height: 36px;
+		}
+		.fp-r button{
+			font-family: Lato,sans-serif!important;
+		   font-size: 16.2px!important;
+           line-height: 23.2px!important;
+           text-decoration: underline;
+           color: rgba(136,176,75,1);
+               background-color: transparent;
+                   border: 0 solid #e5e7eb;
+                   cursor: pointer;
+		}
+		.w2b{
+         height: 60px;
+         font-family: "Lato",sans-serif;
+		}
+		.w2-btn{
+                 margin: 0px;
+    padding: 0px;
+    width: 101px;
+    height: 42px;
+    border-radius: 5px;
+    
+    font-size: 14.3px!important;
+    line-height: 22.4px!important;
+    font-family: Lato,sans-serif!important;
+    color: rgba(255,255,255,1);
+    background-color: rgba(136,176,75,1);
+    border: 0 solid #e5e7eb;
+		}
+
+
+		.m-f{
+			width: 49%;
+			height: 44px;
+			position: relative;
+			left: 7.5px;
+			
+		}
+		.m-f p{
+			 margin: 0px;
+    padding: 0px;
+			font-size: 16.25px;
+			line-height: 23.2px;
+			font-family: Lato,sans-serif!important;
+
+		}
+		.m-f button{
+			 margin: 0px;
+    padding: 0px;
+			font-family: Lato,sans-serif!important;
+		   font-size: 16.1px!important;
+           line-height: 23.2px!important;
+           text-decoration: underline;
+           color: rgba(136,176,75,1);
+               background-color: transparent;
+                   border: 0 solid #e5e7eb;
+		}
+
+
+
+
+		.footer{
+			width: 100%;
+			height: 60px;
+			background-color: black;
+		}
+		.footer-main{
+			width: 83.6%;
+			height: 22px;
+			
+			
+        color: rgba(255,255,255,1);
+		}
+		.f-l{
+			width: 40%;
+			height: 20px;
+			
+		}
+		.f-r{
+			width: 40%;
+			height: 19px;
+			
+			
+		}
+		.f-l p{
+			 margin: 0px;
+    padding: 0px;
+			font-size: 12.6px!important;
+    line-height: 19.5px!important;
+    font-family: Lato,sans-serif!important;
+		}
+		.f-l span a{
+			 margin: 0px;
+             padding: 0px;
+			color: rgba(136,176,75,1);
+			text-decoration: none;
+			font-size: 12.6px!important;
+    line-height: 19.5px!important;
+    font-family: Lato,sans-serif!important;
+		}
+		.f-r .fr-btn0{
+			width: 104.5px;
+			height: 17px;
+			font-size: 12.6px!important;
+    line-height: 19.5px!important;
+			border:0px;
+			border-right: 1px solid;
+			border-color: rgba(255,255,255,1);
+			text-decoration: underline;
+			    cursor: pointer;
+			    font-family: Lato,sans-serif!important;
+			        background-color: transparent;
+			        color: white;
+		}
+        .f-r .fr-btn{
+        	width: 91px;
+        	font-size: 12.6px!important;
+    line-height: 19.5px!important;
+			border:0px;
+			position: relative;
+			bottom: 1px;
+			left: 1px;
+			font-family: Lato,sans-serif!important;
+			text-decoration: underline;
+			    cursor: pointer;
+			        background-color: transparent;
+			        color: white;
+		}
+       
+
+
+
+
+
+
+
+		.disply-flex{
+			display: flex;
+		}
+		.flex-column{
+			flex-direction: column;
+		}
+		.flex-row{
+			flex-direction: row;
+		}
+		.content-center{
+         justify-content: center;
+		} 
+		.item-center-vertically{
+			align-items: center;
+		}
+		.item-start-vertically{
+			align-items: flex-start;
+		}
+		.item-end-vertically{
+			align-items: flex-end;
+		}
+         .multi-item-center-vertically{
+         	align-content: center;
+         }
+         .multi-item-end-vertically{
+         	align-content: flex-end;
+         }
+		
+		.content-left{
+			justify-content: flex-start;
+		}
+		.content-right{
+			justify-content: flex-end;
+		}
+		
+        .space-around{
+        	justify-content: space-around;
+        }
+        .space-evenly-vertically{
+        	align-content: space-around;
+        }
+        .space-evenly{
+        	justify-content: space-evenly;
+        } 
+        .space-between{
+         	justify-content: space-between;
+        }
+		</style>
+</head>
+<body>
+  
+
+
+  <div class="header disply-flex content-center">
+  	<div class="header-main disply-flex content-center">
+  		<button class="h-btn">
+  			<img src="https://recipefund.com/RF_color_v1.webp" >
+  		</button>
+  	</div>
+  </div>
+
+
+
+
+
+  <div class="main disply-flex content-center item-center-vertically">
+  	<div class="welcome disply-flex">
+  		<div class="wm disply-flex flex-column item-center-vertically">
+  			<div class="w-btn disply-flex item-end-vertically">
+  				<button class="flex justify-center items-center  large-text rounded-md text-green border border-green py-1 px-4 hover:bg-green hover:text-white" type="button"> <span class="mr-2 mb-0.5 large-text">←</span>Back</button>
+  			</div>
+
+  			<div class="w-h disply-flex flex-column space-between item-center-vertically">
+  				<h1 class="disply-flex content-center ">Welcome Back to Recipe Fund</h1>
+  				<p class=" disply-flex content-center item-end-vertically">Continue With Your Social Network</p>
+  			</div>
+  			<div class="social disply-flex space-between item-end-vertically">
+  				<button type="button" class="w-12 h-12 hover:bg-cream border flex justify-center items-center rounded-full"><img class=" object-cover" src="https://recipefund.com/facebook.png" width="10" height="20" alt="Facebook logo"></button>
+
+  				<button type="button" class="w-12 h-12 hover:bg-cream border flex justify-center items-center rounded-full"><img class=" object-cover" src="https://recipefund.com/google.png" width="19" height="20" alt="Facebook logo"></button>
+
+  				<button type="button" class="w-12 h-12 hover:bg-cream border flex justify-center items-center rounded-full"><img class=" object-cover" src="https://recipefund.com/twitter.png" width="21" height="17" alt="Facebook logo" style="padding-top: 2px;"></button>
+  			</div>
+
+  			<div class="w-full disply-flex space-between">
+  				<div class="d1"></div>
+  				<span>or</span>
+  				<div class="d1"></div>
+  			</div>
+
+  			
+  			<div class=" input disply-flex flex-column content-right">
+  			  
+  			  <label class="sourc-sans medium-text" for="email">Email
+  			   <span class="text-green font-bold"> <!-- -->*
+  			    </span>
+  			  </label>
+
+  			  <div class=" input-1 disply-flex content-center ">
+  			     <input type="email" required="" name="email" value=""  placeholder="abc@xyz.com">
+  			     <img class=" object-cover" src="https://recipefund.com/mail.png" width="27" height="19" alt="mail">
+  			  </div>
+  			</div>
+
+
+  			<div class=" input-2 disply-flex flex-column content-right">
+  			  
+  			  <label class="sourc-sans medium-text" for="email">Password
+  			   <span class="text-green font-bold"> <!-- -->*
+  			    </span>
+  			  </label>
+
+  			  <div class=" input-3 disply-flex content-center ">
+  			     <input type="email" required="" name="email" value=""  placeholder="*******">
+  			     <img class=" object-cover" src="https://recipefund.com/password.png" width="21" height="24" alt="mail">
+  			  </div>
+  			</div>
+
+  			<div class="fp disply-flex space-between item-end-vertically">
+  				<div class="fp-l disply-flex space-between ">
+  					<label class="custom-checkbox disply-flex item-end-vertically content-right">
+  					  <input type="checkbox">
+  					  
+  					 </label>
+
+  					 <p class=" normal-text mt-2 ml-0">Keep Me Logged in</p>
+
+  				</div>
+  				<div class="fp-r disply-flex content-right">
+  					<button type="button" class=" text-left source-sans medium-text text-green underline" onclick="window.location.href = 'forgetpassword.html'">Forgot Password?</button>
+  				</div>
+  			</div>
+
+
+  			<div class="w2b disply-flex item-end-vertically"> 
+                   <button class="w2-btn ">LOGIN</button>
+            </div>
+
+            <div class="m-f disply-flex item-end-vertically ">
+             <p class="">Don't have an account?&nbsp;&nbsp;
+             </p>
+             <button type="button" class="">Register Here
+             </button>
+            </div>
+  			
+  		</div>
+
+
+
+
+  		<div class="w-img disply-flex content-center item-center-vertically">
+  			<button><img class="" src="https://recipefund.com/RF_white_v2.webp" alt="logo" ></button>
+  		</div>
+  	</div>
+  </div>
+
+
+  <div class="footer disply-flex content-center item-center-vertically">
+  	<div class="footer-main disply-flex space-between item-end-vertically">
+  		<div class="f-l">
+  			<p>© 2020  
+  			  <span class=" text-green"> 
+  			    <a href="/">recipefund.com
+  			    </a>
+  			  </span> All Rights Reserved
+  			</p>
+  		</div>
+  		<div class="f-r disply-flex content-right">
+  		
+  			<button class="fr-btn0 disply-flex item-center-vertically  ">Terms of Service</button>
+
+  			<button class=" fr-btn disply-flex item-center-vertically">Privacy Policy</button>
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>
